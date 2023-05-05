@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Dashboard from "./Components/Dashboard";
+import Navbar from "./Components/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app__navbar">
+        <Navbar />
+      </div>
+      <div className="app__dashboard">
+        <Dashboard
+          image={"https://uploads-ssl.webflow.com/60f31ffb47d0ac4b28d56fb6/620d1571c1155b69b54cb0de_10_minutes_deep_relaxation.jpg"}
+          unique_plays={6000}
+          total_plays={8000}
+          completion_rate={70}
+        />
+      </div>
     </div>
   );
 }
