@@ -14,6 +14,7 @@ function App() {
           unique_plays={6000}
           total_plays={8000}
           completion_rate={80}
+          title={"Dashboard"}
         />
       </div>
     </div>

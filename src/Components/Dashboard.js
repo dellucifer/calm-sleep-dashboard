@@ -9,7 +9,7 @@ import {
   defs, linearGradient,
 } from "recharts";
 
-function Dashboard({ image, unique_plays, total_plays, completion_rate }) {
+function Dashboard({ image, unique_plays, total_plays, completion_rate, title }) {
   const data = [
     {
       type: "Unique Plays",
@@ -26,7 +26,7 @@ function Dashboard({ image, unique_plays, total_plays, completion_rate }) {
   return (
     <div className="dashboard">
       <div className="dashboard__left">
-        <h1>Dashboard</h1>
+        <h1>{title}</h1>
         <img src={image} alt="" />
       </div>
 
