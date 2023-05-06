@@ -19,6 +19,7 @@ These props includes:
 - `Unique Plays` as an integer.
 - `Total Plays` as an integer.
 - `Completion Rate` also as an integer but make sure its value lies between 0-100 as it denotes the percentage.
+- `title` of the dashboard.
 
 ### A Glimpse of the dashboard
 <p align="center">
