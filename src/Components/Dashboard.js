@@ -5,8 +5,8 @@ import {
   BarChart,
   XAxis,
   YAxis,
-  defs,
-  linearGradient,
+  // eslint-disable-next-line
+  defs, linearGradient,
 } from "recharts";
 
 function Dashboard({ image, unique_plays, total_plays, completion_rate }) {
@@ -20,8 +20,6 @@ function Dashboard({ image, unique_plays, total_plays, completion_rate }) {
       plays: total_plays,
     },
   ];
-
-  const progress = [{ name: "Completion Rate", value: completion_rate }];
 
   // BG Color #3BABEF
 

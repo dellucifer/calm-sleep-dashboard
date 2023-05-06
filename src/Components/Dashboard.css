@@ -20,16 +20,12 @@
 }
 
 .dashboard__left > img {
-    max-height: 300px;
+    height: 50vh;
     border-radius: 10px;
     margin-left: 50px;
     margin-right: 50px;
     object-fit: contain;
 }
-
-/* .dashboard__left > h1 {
-    margin-top: -50px;
-} */
 
 .dashboard__right {
     margin-top: 50px;
@@ -71,4 +67,18 @@
 .progress > h4 {
     padding-top: 15px;
     padding-left: 10px;
+}
+
+@media screen and (max-width:700px) {
+    .dashboard{
+        flex-direction: column;
+        margin-top: 500px;
+        align-items: center;
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .dashboard__right {
+        align-self: center;
+    }
 }
