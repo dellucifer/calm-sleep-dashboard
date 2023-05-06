@@ -1,6 +1,13 @@
 import React from "react";
 import "./Dashboard.css";
-import { Bar, BarChart, Tooltip, XAxis, YAxis, defs, linearGradient } from "recharts";
+import {
+  Bar,
+  BarChart,
+  XAxis,
+  YAxis,
+  defs,
+  linearGradient,
+} from "recharts";
 
 function Dashboard({ image, unique_plays, total_plays, completion_rate }) {
   const data = [
@@ -15,7 +22,6 @@ function Dashboard({ image, unique_plays, total_plays, completion_rate }) {
   ];
 
   const progress = [{ name: "Completion Rate", value: completion_rate }];
-  
 
   // BG Color #3BABEF
 
@@ -26,8 +32,9 @@ function Dashboard({ image, unique_plays, total_plays, completion_rate }) {
         <img src={image} alt="" />
       </div>
 
-      <div className="dashboard__info">
+      <div className="dashboard__right">
         <div className="dashboard__barChart">
+          <h4>Plays</h4>
           <BarChart
             width={500}
             height={200}
@@ -52,8 +59,13 @@ function Dashboard({ image, unique_plays, total_plays, completion_rate }) {
           </BarChart>
         </div>
 
+        {/* Progress Bar */}
+
         <div className="dashboard__progressBar">
-          
+          <h4>Completion Rate</h4>
+          <div class="progressBar__bar">
+            <div className="progress" style={{width: `${completion_rate}%`}}><h4>{completion_rate}%</h4></div>
+          </div>
         </div>
       </div>
     </div>

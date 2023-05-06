@@ -13,7 +13,7 @@ function App() {
           image={"https://uploads-ssl.webflow.com/60f31ffb47d0ac4b28d56fb6/620d1571c1155b69b54cb0de_10_minutes_deep_relaxation.jpg"}
           unique_plays={6000}
           total_plays={8000}
-          completion_rate={70}
+          completion_rate={80}
         />
       </div>
     </div>
